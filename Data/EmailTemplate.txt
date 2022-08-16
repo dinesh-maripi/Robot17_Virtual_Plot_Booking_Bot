@@ -1,0 +1,15 @@
+Dear {0} & {1},
+
+New Plot (Plot Number: {2}) with No.of.Sqft {3} has been booked successfully on {4} & {5}. 
+
+Here you can find Booking Details...
+
+Booking Number: {6}
+Buyer Name: {7}
+Buyer Phone Number: {8}
+Seller Name: {9}
+Seller Phone Number: {10}
+
+Thanks,
+PlotBot
+www.BotsDNA.com

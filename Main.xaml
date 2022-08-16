@@ -1,0 +1,377 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="799,3169" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="54">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence: Main" sap:VirtualizedContainerService.HintSize="670,3104" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="InputPlotsDT" />
+      <Variable x:TypeArguments="ui:Browser" Name="EdgeBrowser" />
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[InputPlotsDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="628,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\virtual_plots.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Edge" DisplayName="Open Browser: Edge" sap:VirtualizedContainerService.HintSize="628,215" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[EdgeBrowser]" Url="https://botsdna.com/vitrualplots/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[InputPlotsDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="628,2630" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="594,2515" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="SellerMobileNo" />
+              <Variable x:TypeArguments="x:String" Name="BuyerMobileNo" />
+              <Variable x:TypeArguments="x:String" Name="PlotNo" />
+              <Variable x:TypeArguments="x:String" Name="SQFT" />
+              <Variable x:TypeArguments="x:String" Name="TransactionNo" />
+              <Variable x:TypeArguments="x:String" Name="BuyerName" />
+              <Variable x:TypeArguments="x:String" Name="SellerName" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[EdgeBrowser]" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe https://bots...'" sap:VirtualizedContainerService.HintSize="552,2423" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
+              <ui:BrowserScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2315" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="index" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="476,193" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[SellerMobileNo]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[StrReverse(StrReverse(CurrentRow(0).ToString.Replace("-","")).Substring(0, 10))]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[BuyerMobileNo]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[StrReverse(StrReverse(CurrentRow(2).ToString.Replace("-","")).Substring(0, 10))]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[PlotNo]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow(4).ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[SQFT]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow(5).ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="476,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Seller mobile no: {0}, Buyer mobile no: {1}&quot;,SellerMobileNo,BuyerMobileNo)]" />
+                    <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check: Buyer" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Check_1">
+                      <ui:Check.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3c3286e-97a3-4ac3-b9f6-a5d2ec070385" InformativeScreenshot="b5b532d99ee104c91d3b244e4894d0e1" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TR' innertext='*{0}' /&gt;&lt;webctrl tag='INPUT' colName='Buyer' type='radio' /&gt;&quot;, BuyerMobileNo)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Check.Target>
+                    </ui:Check>
+                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text: Buyer Name" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                      <ui:GetValue.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="52341ca4-3ef6-480d-8bfc-d668f39aa712" InformativeScreenshot="2b3431b8167ed09cabf5671c9eb18502" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TR' innertext='*{0}' /&gt;&lt;webctrl isleaf='1' tag='TD' tableCol='3' colName='Name' /&gt;&quot;, BuyerMobileNo)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetValue.Target>
+                      <ui:GetValue.Value>
+                        <OutArgument x:TypeArguments="x:String">[BuyerName]</OutArgument>
+                      </ui:GetValue.Value>
+                    </ui:GetValue>
+                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text: Seller Name" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                      <ui:GetValue.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc04bd85-dc23-4e40-ac57-bfff492615f1" InformativeScreenshot="677e0ec2d5f8e03a182d428e9448afc7" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TR' innertext='*{0}' /&gt;&lt;webctrl isleaf='1' tag='TD' tableCol='3' colName='Name' /&gt;&quot;, SellerMobileNo)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetValue.Target>
+                      <ui:GetValue.Value>
+                        <OutArgument x:TypeArguments="x:String">[SellerName]</OutArgument>
+                      </ui:GetValue.Value>
+                    </ui:GetValue>
+                    <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check: Seller" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Check_2">
+                      <ui:Check.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce0ef7e8-065c-4a26-8165-891442ee1035" InformativeScreenshot="9bf3ebc3dee13bba9992f21d1bb9e094" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TR' innertext='*{0}' /&gt;&lt;webctrl tag='INPUT' colName='Seller' type='radio' /&gt;&quot;, SellerMobileNo)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Check.Target>
+                    </ui:Check>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into: Plot no" sap:VirtualizedContainerService.HintSize="476,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[PlotNo]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a0cb482b-2941-4512-b6e9-a41c746a9459" InformativeScreenshot="945bc9e5a026ce84a62d315a99c7e01d" Selector="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' rowName=' Plot No :' tableCol='2' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into: SQFT" sap:VirtualizedContainerService.HintSize="476,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[SQFT]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="adbec58f-51f6-4883-ade0-4284a17f146c" InformativeScreenshot="d8f275551db3713edeb44f04ba278fcb" Selector="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' rowName=' Sqft :' tableCol='2' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click: Submit" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4ee9cc7c-56f5-48c9-9444-4ff9f4212117" InformativeScreenshot="8dea5b9e10dbbbc5de0b024dd8cd0a9f" Selector="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' aaname='Submit' type='button' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text: TransactionNo" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                      <ui:GetValue.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16e4299f-8137-4be8-b16f-8dc6bc425f06" InformativeScreenshot="01b06cd3a89984ea976e82543e50032e" Selector="&lt;html app='msedge.exe' title='https://botsdna.com/vitrualplots/Thanks.html' /&gt;&lt;webctrl tag='P' id='TransNo' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetValue.Target>
+                      <ui:GetValue.Value>
+                        <OutArgument x:TypeArguments="x:String">[TransactionNO]</OutArgument>
+                      </ui:GetValue.Value>
+                    </ui:GetValue>
+                    <ui:WriteCell Cell="[&quot;G&quot;+(CInt(index)+2).ToString]" DisplayName="Write Cell: TransactionNo" sap:VirtualizedContainerService.HintSize="476,115" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[TransactionNo]" WorkbookPath="Data\virtual_plots.xlsx" />
+                    <Sequence DisplayName="Sequence: Mail" sap:VirtualizedContainerService.HintSize="476,381" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="ss:SecureString" Name="Password" />
+                        <Variable x:TypeArguments="x:String" Name="Username" />
+                        <Variable x:TypeArguments="x:String" Name="EmailTemplate" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[Password]" PersistanceType="Enterprise" Target="GMail" Username="[Username]" />
+                      <ui:ReadTextFile File="{x:Null}" Content="[EmailTemplate]" DisplayName="Read Text File" FileName="Data\EmailTemplate.txt" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[String.Format(EmailTemplate, BuyerName, SellerName, PlotNo, SQFT, System.Datetime.Now.ToString(&quot;dd-MMM-yy&quot;), System.Datetime.Now.ToString(&quot;hh:mm:ss tt&quot;), TransactionNo, BuyerName, BuyerMobileNo, SellerName, SellerMobileNo)]" DisplayName="Send SMTP Mail Message" Email="[Username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Name="UiPath Bot" Port="587" SecureConnection="Auto" SecurePassword="[Password]" Server="smtp.gmail.com" Subject="Virtual Plots Info" To="dineshmaripi007@gmail.com">
+                        <ui:SendMail.Files>
+                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                        </ui:SendMail.Files>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:SendMail>
+                    </Sequence>
+                    <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="476,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://botsdna.com/vitrualplots/" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:BrowserScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:BrowserScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
